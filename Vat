@@ -1,0 +1,4 @@
+cena=input("cena?: ")
+cena=int(cena)
+vat=0.23*cena
+print("Cena:", cena,".Vat: ", vat,".Cena bez vat: ", cena-vat)
