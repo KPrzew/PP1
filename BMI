@@ -1,0 +1,6 @@
+eight=input("Podaj wzrost w metrze i ułamku: ")
+weight=input("Podaj wagę: ")
+height=float(height)
+weight=float(weight)
+BMI=weight/height**2
+print(round(BMI,2))
