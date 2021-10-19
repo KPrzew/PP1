@@ -1,0 +1,5 @@
+from random import randint
+kostka1=randint(1,6)
+kostka2=randint(1,6)
+kostka3=randint(1,6)
+print("Twoje trafienia to:", kostka1, kostka2, kostka3, "a suma to:", kostka1+kostka2+kostka3)
