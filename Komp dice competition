@@ -1,0 +1,8 @@
+from random import randint
+komp=randint(1,6)
+shot=input("Jaką liczbę wylosował komputer?: ")
+shot=int(shot)
+if(komp==shot):
+    print("True")
+else:
+    print("False, komputer wylosował:", komp)
