@@ -1,0 +1,13 @@
+x=int(input("Podaj koordynat x: "))
+y=int(input("Podaj koordynat y: "))
+if(x>=0):
+    if(y>=0):
+        ćwiartka="pierwszej"
+    if(y<0):
+        ćwiartka="czwartej"
+else:
+    if(y>=0):
+        ćwiartka="drugiej"
+    if(y<0):
+        ćwiartka="trzeciej"
+print(f"Samolot jest w ćwiartce {ćwiartka}")
