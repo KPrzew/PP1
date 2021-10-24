@@ -1,0 +1,6 @@
+x=input("Podaj pierwszą cyfrę: ")
+y=input("Podaj drugą cyfrę: ")
+if(x>y):
+    print(f"Liczby rosnąco: {y}, {x}")
+else:
+    print(f"Liczby rosnąco: {x}, {y}")
