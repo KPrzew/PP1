@@ -1,0 +1,13 @@
+n=int(input("Podaj liczbę liczb pierwszych: "))
+print("Liczby pierwsze:",end=" ")
+ilosc=0
+x=2
+while ilosc<n:
+    control=x-1
+    while(x%control!=0 and control!=1):
+        control-=1
+    if(control==1):
+        print(x,end=" ")
+        ilosc+=1
+    x+=1
+    
