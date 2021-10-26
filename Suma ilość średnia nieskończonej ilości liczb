@@ -1,0 +1,9 @@
+quantity=0
+suma=0
+x=1
+while x!=0:
+    x=int(input("Wprowadź liczbę: "))
+    suma=suma+x
+    if(x!=0):
+        quantity+=1
+print(f"sum={suma}, quantity={quantity}, mean={suma/quantity}")
