@@ -1,0 +1,3 @@
+university=input("Uniwersytet: ")
+for x in university:
+    print(x, end=" ")
