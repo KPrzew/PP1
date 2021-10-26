@@ -1,0 +1,10 @@
+x=1
+control=1
+while(x<=49):
+    print(control,end=" ")
+    if(control+7>49):
+        print("")
+        control-=41
+    else:
+        control+=7
+    x+=1
