@@ -1,0 +1,14 @@
+cena=int(input("wprowadź kwote: "))
+piątki=0
+dwójki=0
+złotówki=0
+while cena-5>=0:
+    cena=cena-5
+    piątki=piątki+1
+while cena-2>=0:
+    cena-=2
+    dwójki+=1
+while cena-1>=0:
+    cena-=1
+    złotówki+=1
+print(f"Masz {piątki}x5zł,{dwójki}x2zł i {złotówki}x1zł")
