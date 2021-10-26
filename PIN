@@ -1,0 +1,12 @@
+pin="0805"
+inpin="0"
+control=0
+while(inpin!=pin and control!=3):
+    inpin=input("wprowadź pin: ")
+    if (inpin!=pin):
+        print(f"Pin niepoprawny, pozostało {2-control} szans")
+    else:
+        print(f"Pin poprawny")
+    control+=1
+    if (control==3):
+        print("Zbyt wiele nieudanych pinów, karta zostaje zablokowana")
