@@ -1,0 +1,9 @@
+x=0
+y=1
+control=0
+for z in range (1,51):
+    print(x,end=" ")
+    control=x
+    x=y
+    y=control+y
+    
