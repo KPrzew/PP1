@@ -1,0 +1,9 @@
+man=int(input("Wprowadź wiek psa w człowieczych latach: "))
+control=0; dog=0.0
+while control<2 and control<=man:
+    dog+=10.5
+    control+=1
+while control<man:
+    dog+=4
+    control+=1
+print(f"Wiek psa to {dog}")
