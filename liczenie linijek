@@ -1,0 +1,8 @@
+x=input()
+f=open(x,"r")
+l=0
+for line in f:
+    if line !="\n":
+        l+=1
+f.close()
+print(l)
