@@ -1,0 +1,8 @@
+n="You never get a second chance to make a first impression"
+def ile(n,i):
+    liczba=0
+    for x in n:
+        if (x==i):
+            liczba=liczba+1
+    return liczba
+print (ile(n,"e"))
