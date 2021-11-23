@@ -1,0 +1,12 @@
+with open("filename.txt","r") as f:
+    j=0
+    for i in f:
+        print(i,end='')
+        if j==4:
+            if input()=='':
+                j=0
+                continue
+            else:
+                break
+        j+=1
+f.close()
