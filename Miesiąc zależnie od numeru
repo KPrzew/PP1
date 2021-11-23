@@ -1,0 +1,6 @@
+import datetime
+def month(n):
+    miesiac=datetime.datetime.strptime(n, "%m")
+    return miesiac.strftime("%B")
+n=str(7)
+print (month(n))
