@@ -1,0 +1,9 @@
+def f3(n):
+    suma=0
+    while n>1:
+        suma=suma+(n%10)
+        hlp=n
+        n=int(n/10)
+        if(n==1 and hlp!=1):
+            suma+=1
+    return int(suma)
