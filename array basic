@@ -1,0 +1,5 @@
+a=["Peter","Ann","Paula"]
+for i in range (len(a)):
+    print(i)
+print(a[0])
+print(a[len(a)-1])
