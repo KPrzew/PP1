@@ -1,0 +1,8 @@
+x=int(input())
+stack=[]
+while x!=0:
+    stack.append(int(x%2))
+    x=int(x)/2
+print(stack)
+for i in range (len(stack)):
+    print(str(stack.pop()),end="")
