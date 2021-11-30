@@ -1,0 +1,4 @@
+import json
+d={"Imię":"Karol","Id":221431,"Phone Numbers":{"private":"222333444","public":"443322234"}}
+with open("student.json","w") as f:
+    json.dump(d,f)
