@@ -1,0 +1,59 @@
+class TV():
+    def __init__(self):
+        self.is_on=False
+        self.channel_no=1
+        self.channels_list=[]
+        self.volume=0
+
+    def turn_off(self):
+        self.is_on=False
+        
+    def turn_on(self):
+        self.is_on=True
+    
+    def show_status(self):
+        if self.is_on==True:
+            try:
+                print("Is on: ",self.is_on," Channel no: ", self.channel_no,".", self.channels_list[self.channel_no-1], "Vol: ", self.volume)
+            except:
+                print("Is on: ",self.is_on," Channel no: ", self.channel_no, "Vol: ", self.volume)
+        else:
+            print("Is on: ",self.is_on, "Vol: ", self.volume)
+
+    def set_channel_no(self,number):
+        self.channel_no=number
+
+    def show_channels(self):
+        for i in range(len(self.channels_list)):
+            print(i+1,":",self.channels_list[i])
+    
+    def set_channels(self,channels_list):
+        self.channels_list=channels_list
+
+    def vol_up(self):
+        self.volume+=1
+        if self.volume>10:
+            self.volume-=1
+    def vol_down(self):
+        self.volume-=1
+        if self.volume<0:
+            self.volume+=1
+
+    
+
+        
+tv=TV()
+tv.show_status()
+tv.turn_on()
+tv.vol_down()
+tv.show_status()
+tv.set_channels(["TVP1", "TVP2", "Polsat", "TVN", "Filmbox", "Discovery"])
+tv.show_channels()
+tv.vol_up()
+tv.vol_up()
+tv.vol_up()
+tv.vol_up()
+tv.vol_up()
+tv.set_channel_no(6)
+tv.show_status()
+tv.turn_off()
